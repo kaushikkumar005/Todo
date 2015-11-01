@@ -1,0 +1,31 @@
+
+
+  <div class="modal">
+
+    <!-- Modal header bar -->
+    <ion-header-bar class="bar-secondary">
+      <h1 class="title">Edit Task</h1>
+      <button class="button button-clear button-positive" ng-click="closeEditTask()">Cancel</button>
+    </ion-header-bar>
+
+    <!-- Modal content area -->
+    <ion-content>
+
+      <form ng-submit="editTaskInDB(task)">
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="What do you need to do?" ng-model="project.title">
+			 <input type="text" ng-model="project.title">
+			 <input type="text" ng-model="task.title">
+			 
+          </label>
+        </div>
+        <div class="padding">
+          <button type="submit" class="button button-block button-positive">Edit Task</button>
+        </div>
+      </form>
+
+    </ion-content>
+
+  </div>
+ 
